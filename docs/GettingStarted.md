@@ -78,7 +78,7 @@ Additionally, `createMemoryHistory` provides `history.index` and `history.entrie
 You can listen for changes to the current location using `history.listen`:
 
 ```js
-history.listen((location, action) => {
+history.listen(({ location, action }) => {
   console.log(
     `The current URL is ${location.pathname}${location.search}${location.hash}`
   );
